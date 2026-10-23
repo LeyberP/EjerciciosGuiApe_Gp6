@@ -1,160 +1,85 @@
-# 📚 Ejercicios Guía APE – Grupo 6
+# 💻 Ejercicios Guía APE - Algoritmos y Lógica de Programación
 
-| | |
-|---|---|
+**Universidad Técnica de Ambato**  
+*Facultad de Ingeniería en Sistemas, Electrónica e Industrial - Carrera de Software*
+
+---
+
+## 📋 Datos Informativos
+
+| Campo | Detalle |
+| :--- | :--- |
 | **Nombre:** | Leyber Peñafiel |
-| **Curso:** | B |
-| **Nivel:** | Primer semestre |
-| **Docente:** | Ing. José Caiza |
-| **Asignatura:** | Algoritmos y lógica de programación |
-| **Institución:** | Universidad Técnica de Ambato – Carrera de Software |
+| **Nivel:** | Primer Semestre |
+| **Curso / Paralelo:** | B (1-B) |
+| **Asignatura:** | Algoritmos y Lógica de Programación |
+| **Docente:** | Ing. José Caiza (Ing. Jose Caizabuano, Mg.) |
+| **Repositorio:** | [EjerciciosGuiApe_Gp6](https://github.com/LeyberP/EjerciciosGuiApe_Gp6/tree/main) |
 
 ---
 
-## 📖 Descripción
+## 🎯 Objetivos de la Práctica
 
-Repositorio con los ejercicios de la **Guía APE (Clase 3)**, desarrollados en **Java**.
+* **Objetivo General:** Resolver los ejercicios de la clase aplicando correctamente la declaración e invocación de métodos en Java, así como el uso de parámetros, argumentos y valores de retorno.
+* **Objetivos Específicos:**
+  * Distinguir cuándo un método debe usar `void` y cuándo debe devolver un valor.
+  * Aplicar parámetros y argumentos en la definición y llamada de métodos.
+  * Implementar métodos de cálculo y validación, e interpretar el paso por valor de tipos primitivos.
 
-**Objetivo general:** resolver los ejercicios aplicando correctamente la declaración e invocación de métodos, el uso de parámetros, argumentos y valores de retorno.
+---
 
-**Objetivos específicos:**
-- Distinguir cuándo un método debe usar `void` y cuándo debe devolver un valor.
-- Aplicar parámetros y argumentos en la definición y llamada de métodos.
-- Implementar métodos de cálculo y validación, e interpretar el paso por valor de tipos primitivos.
+## 📂 Estructura del Repositorio y Descripción de Ejercicios
 
-## 📑 Índice de ejercicios
+> 💡 **Nota:** Haz clic en los enlaces de cada carpeta o archivo para ir directamente al código fuente dentro del repositorio. *(Si tus carpetas tienen nombres ligeramente distintos en GitHub, solo ajusta la ruta entre paréntesis).*
 
-| N.º | Ejercicio | Tema | Carpeta |
-|---|---|---|---|
-| Clase | Completar la clase Producto | `void` vs `return` | [EjercicioClase_Producto](./EjercicioClase_Producto) |
-| 1 | Identificación de tipos de retorno | Corregir métodos sin `return` | [Ejercicio1_TiposRetorno](./Ejercicio1_TiposRetorno) |
-| 2 | Método `void` | Acción directa (saludo) | [Ejercicio2_MetodoVoid](./Ejercicio2_MetodoVoid) |
-| 3 | Parámetros vs. argumentos | Firma y llamada | [Ejercicio3_ParametrosArgumentos](./Ejercicio3_ParametrosArgumentos) |
-| 4 | Paso por valor | Variables primitivas | [Ejercicio4_PasoPorValor](./Ejercicio4_PasoPorValor) |
-| 5 | `calcularPromedio` | Media de tres `double` | [Ejercicio5_Promedio](./Ejercicio5_Promedio) |
-| 6 | Validación de edad | Método `boolean` | [Ejercicio6_VerificarEdad](./Ejercicio6_VerificarEdad) |
-| 7 | Clase Producto (inventario) | Atributos y método con retorno | [Ejercicio7_ProductoInventario](./Ejercicio7_ProductoInventario) |
-| 8 | Instanciación e invocación | Uso del objeto en `main` | [Ejercicio8_Principal](./Ejercicio8_Principal) |
+### 🔹 [Ejercicio en Clase: Completar la clase `Producto`](./EjercicioEnClase/)
+* **Archivo principal:** [`Producto.java`](./EjercicioEnClase/Producto.java)
+* **Descripción:** Implementación de la clase `Producto` con los atributos `nombre` y `precio`. Incluye el método `mostrarDetalles()` (tipo `void` para imprimir en consola) y el método `calcularPrecioFinal(double porcentajeDescuento)` que retorna un `double` con el precio tras aplicar el descuento.
 
-## 🗂️ Estructura del repositorio
+### 🔹 [Ejercicio 1: Identificación de tipos de retorno](./Ejercicio1/)
+* **Archivo principal:** [`Area.java`](./Ejercicio1/Area.java)
+* **Descripción:** Corrección de errores comunes en métodos con retorno. Demuestra que si un método declara un tipo de retorno como `double` (ej. `calcularArea(double lado)`), debe incluir obligatoriamente una instrucción `return` que devuelva el resultado compatible (`lado * lado`), en lugar de solo imprimirlo.
 
-```
-EjerciciosGuiApe_Gp6/
-├── README.md
-├── EjercicioClase_Producto/
-│   ├── README.md
-│   └── Producto.java
-├── Ejercicio1_TiposRetorno/
-│   ├── README.md
-│   └── Ejercicio1.java
-├── Ejercicio2_MetodoVoid/
-│   ├── README.md
-│   └── Bienvenida.java
-├── Ejercicio3_ParametrosArgumentos/
-│   ├── README.md
-│   └── Ejercicio3.java
-├── Ejercicio4_PasoPorValor/
-│   ├── README.md
-│   └── Ejercicio4.java
-├── Ejercicio5_Promedio/
-│   ├── README.md
-│   └── Ejercicio5.java
-├── Ejercicio6_VerificarEdad/
-│   ├── README.md
-│   └── Ejercicio6.java
-├── Ejercicio7_ProductoInventario/
-│   ├── README.md
-│   └── Producto.java
-└── Ejercicio8_Principal/
-    ├── README.md
-    ├── Producto.java
-    └── Principal.java
-```
+### 🔹 [Ejercicio 2: Método `void` para una acción directa](./Ejercicio2/)
+* **Archivo principal:** [`Bienvenida.java`](./Ejercicio2/Bienvenida.java)
+* **Descripción:** Creación de la clase `Bienvenida` con el método `saludar(String nombre, int edad)`. Al tratarse únicamente de mostrar un mensaje de bienvenida por pantalla sin requerir el dato para cálculos posteriores, se emplea el tipo de retorno `void`.
 
-## ⚙️ Requisitos
+### 🔹 [Ejercicio 3: Parámetros vs. Argumentos](./Ejercicio3/)
+* **Archivo principal:** [`ParametrosArgumentos.java`](./Ejercicio3/ParametrosArgumentos.java)
+* **Descripción:** Demostración práctica de la diferencia entre **parámetros** (variables `nombre` y `edad` declaradas en la firma del método `saludar`) y **argumentos** (los valores reales como `"Ana"` y `20` que se envían al invocar el método).
 
-- **JDK 17 o superior** ([descargar](https://adoptium.net/))
-- Un editor o IDE (VS Code, IntelliJ IDEA, NetBeans)
-- Git (opcional)
+### 🔹 [Ejercicio 4: Comportamiento del paso por valor](./Ejercicio4/)
+* **Archivo principal:** [`PasoPorValor.java`](./Ejercicio4/PasoPorValor.java)
+* **Descripción:** Evaluación del paso por valor en tipos de datos primitivos en Java. Se demuestra mediante el método `cambiar(int valor)` que reasignar un valor dentro del método (`valor = 50`) afecta únicamente a la copia local y no modifica la variable original (`numero = 10`) definida en el método `main`.
 
-Comprueba tu instalación:
+### 🔹 [Ejercicio 5: Método `calcularPromedio`](./Ejercicio5/)
+* **Archivo principal:** [`Promedio.java`](./Ejercicio5/Promedio.java)
+* **Descripción:** Implementación del método `calcularPromedio(double n1, double n2, double n3)`, el cual recibe tres calificaciones o valores numéricos de tipo `double`, calcula su media aritmética y retorna el resultado exacto.
+
+### 🔹 [Ejercicio 6: Validación de edad](./Ejercicio6/)
+* **Archivo principal:** [`ValidacionEdad.java`](./Ejercicio6/ValidacionEdad.java)
+* **Descripción:** Creación del método `verificarEdad(int edad)` con retorno booleano (`boolean`). Evalúa si la edad ingresada se encuentra fuera del rango válido (`edad < 0 || edad > 120`), mostrando un mensaje de alerta y retornando `false` si es inválida, o `true` en caso contrario.
+
+### 🔹 [Ejercicio 7: Completar la clase `Producto` (Inventario)](./Ejercicio7/)
+* **Archivo principal:** [`Producto.java`](./Ejercicio7/Producto.java)
+* **Descripción:** Definición de la clase `Producto` enfocada en control de inventario, utilizando los atributos `stock` (`int`) y `precioUnitario` (`double`), junto con el método `calcularValorTotal()` que retorna el producto de ambos atributos.
+
+### 🔹 [Ejercicio 8: Instanciación e invocación en `main`](./Ejercicio8/)
+* **Archivos principales:** [`Principal.java`](./Ejercicio8/Principal.java) | [`Producto.java`](./Ejercicio8/Producto.java)
+* **Descripción:** Clase ejecutable `Principal` que instancia un objeto `p` de tipo `Producto`, le asigna un `stock` de `10` y un `precioUnitario` de `25.5`, invoca el método `calcularValorTotal()` y muestra en consola el total del inventario (`255.0`).
+
+---
+
+## 🚀 Cómo Ejecutar los Programas
+
+Para clonar este repositorio y ejecutar cualquiera de los ejercicios en tu máquina local, sigue estos pasos:
+
+### 1. Prerrequisitos
+* Tener instalado **Java Development Kit (JDK)** (versión 8 o superior). Puedes verificarlo ejecutando `java -version` en tu terminal.
+* Contar con **Git** instalado (opcional, también puedes descargar el proyecto como archivo `.zip`).
+
+### 2. Clonar el repositorio
+Abre tu terminal o consola de comandos y ejecuta:
 ```bash
-java -version
-javac -version
-```
-
-## 📥 Cómo obtener el proyecto
-
-```bash
-git clone https://github.com/LeyberP/EjerciciosGuiApe_Gp6.git
+git clone [https://github.com/LeyberP/EjerciciosGuiApe_Gp6.git](https://github.com/LeyberP/EjerciciosGuiApe_Gp6.git)
 cd EjerciciosGuiApe_Gp6
-```
-
-## ▶️ Cómo ejecutar cada programa
-
-Regla general: entra a la carpeta del ejercicio, compila y ejecuta la clase que tenga el método `main`.
-
-```bash
-cd NombreCarpeta
-javac *.java
-java NombreClaseConMain
-```
-
-| Ejercicio | Comandos |
-|---|---|
-| [Clase: Producto](./EjercicioClase_Producto) | `cd EjercicioClase_Producto` → `javac *.java` → `java Producto`* |
-| [1](./Ejercicio1_TiposRetorno) | `cd Ejercicio1_TiposRetorno` → `javac *.java` → `java Ejercicio1`* |
-| [2](./Ejercicio2_MetodoVoid) | `cd Ejercicio2_MetodoVoid` → `javac *.java` → `java Bienvenida`* |
-| [3](./Ejercicio3_ParametrosArgumentos) | `cd Ejercicio3_ParametrosArgumentos` → `javac *.java` → `java Ejercicio3`* |
-| [4](./Ejercicio4_PasoPorValor) | `cd Ejercicio4_PasoPorValor` → `javac *.java` → `java Ejercicio4` |
-| [5](./Ejercicio5_Promedio) | `cd Ejercicio5_Promedio` → `javac *.java` → `java Ejercicio5`* |
-| [6](./Ejercicio6_VerificarEdad) | `cd Ejercicio6_VerificarEdad` → `javac *.java` → `java Ejercicio6`* |
-| [7](./Ejercicio7_ProductoInventario) | `cd Ejercicio7_ProductoInventario` → `javac *.java` → `java Producto`* |
-| [8](./Ejercicio8_Principal) | `cd Ejercicio8_Principal` → `javac *.java` → `java Principal` |
-
-\* Estas clases solo definen métodos. Para ejecutarlas necesitan un `main` (propio o en una clase `Principal`). Si tu archivo no lo tiene, agrégalo para probar el método.
-
----
-
-## 🧪 Descripción de los ejercicios
-
-### Ejercicio de clase: clase `Producto` · [carpeta](./EjercicioClase_Producto)
-- `mostrarDetalles()` solo imprime información, por eso es `void`.
-- `calcularPrecioFinal(double porcentajeDescuento)` calcula y **devuelve** un `double` con `return`.
-
-### Ejercicio 1: tipos de retorno · [carpeta](./Ejercicio1_TiposRetorno)
-Regla: si un método declara un tipo distinto de `void`, debe devolver un valor compatible en todos los caminos. Si solo realiza una acción, debe ser `void`. Incluye un ejemplo de error (`double` sin `return`) y su corrección.
-
-### Ejercicio 2: método `void` · [carpeta](./Ejercicio2_MetodoVoid)
-`saludar(String nombre, int edad)` imprime un mensaje de bienvenida y no devuelve nada.
-
-### Ejercicio 3: parámetros vs. argumentos · [carpeta](./Ejercicio3_ParametrosArgumentos)
-Los **parámetros** (`nombre`, `edad`) se declaran en la firma del método. Los **argumentos** (`"Ana"`, `20`) se envían en la llamada.
-
-### Ejercicio 4: paso por valor · [carpeta](./Ejercicio4_PasoPorValor)
-En Java, un método recibe una **copia** de las variables primitivas. Cambiar el parámetro dentro del método no modifica la variable original del `main`.
-
-### Ejercicio 5: `calcularPromedio` · [carpeta](./Ejercicio5_Promedio)
-Recibe tres `double` y devuelve su media aritmética: `(n1 + n2 + n3) / 3.0`.
-
-### Ejercicio 6: validación de edad · [carpeta](./Ejercicio6_VerificarEdad)
-`verificarEdad(int edad)` devuelve `false` si la edad es menor que 0 o mayor que 120, y `true` en caso contrario.
-
-### Ejercicio 7: clase `Producto` (inventario) · [carpeta](./Ejercicio7_ProductoInventario)
-Atributos `stock` y `precioUnitario`; el método `calcularValorTotal()` devuelve `stock * precioUnitario`.
-
-### Ejercicio 8: instanciación e invocación · [carpeta](./Ejercicio8_Principal)
-En `Principal.main` se crea `Producto p`, se asignan `stock = 10` y `precioUnitario = 25.5`, y se imprime el total. **Salida esperada:** `255.0`
-
----
-
-## ✅ Conclusiones
-
-1. El tipo de retorno refleja el propósito del método: `void` para acciones y un tipo de dato para resultados reutilizables.
-2. Los parámetros se declaran en la firma y los argumentos se pasan al invocar.
-3. En tipos primitivos, Java pasa una copia del valor.
-4. Combinar atributos y métodos con retorno permite obtener resultados reutilizables.
-
-## 👨‍💻 Autor
-
-**Leyber Peñafiel** · Primer semestre, Curso B · Docente: Ing. José Caiza
